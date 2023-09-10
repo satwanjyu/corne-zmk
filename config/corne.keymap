@@ -13,7 +13,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "UNDERSCORE_MINUS";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
             bindings =
                 <&kp UNDERSCORE>,
                 <&kp MINUS>;
@@ -22,7 +21,6 @@
             compatible = "zmk,behavior-tap-dance";
             label = "EQUALS_PLUS";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
             bindings =
                 <&kp EQUAL>,
                 <&kp PLUS>;
@@ -55,10 +53,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL   &kp AT    &kp HASH   &kp DLLR           &kp PRCNT       &kp LEFT_PARENTHESIS  &kp N7  &kp N8      &kp N9  &kp RIGHT_PARENTHESIS  &kp BSPC
-&kp GRAVE  &kp CARET  &kp AMPS  &kp ASTRK  &underscore_minus  &equals_plus    &kp LEFT_BRACE        &kp N4  &kp N5      &kp N6  &kp RIGHT_BRACE        &kp PIPE
-&trans     &trans     &trans    &trans     &kp UNDER          &kp EQUAL       &kp LEFT_BRACKET      &kp N1  &kp N2      &kp N3  &kp RIGHT_BRACKET      &kp BSLH
-                                &kp LGUI   &trans             &kp SPACE       &kp RET               &kp N0  &kp PERIOD
+&kp TILDE  &kp EXCL   &kp AT    &kp HASH        &kp DLLR   &kp PRCNT    &kp LEFT_PARENTHESIS  &kp N7  &kp N8      &kp N9  &kp RIGHT_PARENTHESIS  &kp BSPC
+&kp GRAVE  &kp CARET  &kp AMPS  &kp ASTRK       &kp MINUS  &kp PLUS     &kp LEFT_BRACE        &kp N4  &kp N5      &kp N6  &kp RIGHT_BRACE        &kp PIPE
+&trans     &trans     &trans    &kp UNDERSCORE  &kp EQUAL  &trans       &kp LEFT_BRACKET      &kp N1  &kp N2      &kp N3  &kp RIGHT_BRACKET      &kp BSLH
+                                &kp LGUI        &trans     &kp SPACE    &kp RET               &kp N0  &kp PERIOD
             >;
         };
 
