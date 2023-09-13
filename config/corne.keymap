@@ -70,7 +70,7 @@
             bindings = <
 &trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH        &kp DOLLAR  &kp PERCENT    &trans    &trans    &trans  &trans     &trans         &trans
 &trans  &kp AMPERSAND    &kp ASTERISK  &kp UNDERSCORE  &kp EQUAL   &kp GRAVE      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PIPE       &trans
-&trans  &trans           &kp CARET     &kp MINUS       &kp PLUS    &kp TILDE      &trans    &trans    &trans  &trans     &kp BACKSLASH  &trans
+&trans  &caps_word       &kp CARET     &kp MINUS       &kp PLUS    &kp TILDE      &trans    &trans    &trans  &trans     &kp BACKSLASH  &trans
                                        &trans          &trans      &trans         &trans    &trans    &trans
             >;
         };
