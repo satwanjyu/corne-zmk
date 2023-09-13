@@ -68,10 +68,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH        &kp DOLLAR  &kp PERCENT    &trans    &trans    &trans  &trans     &trans         &trans
-&trans  &kp AMPERSAND    &kp ASTERISK  &kp UNDERSCORE  &kp EQUAL   &kp GRAVE      &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PIPE       &trans
-&trans  &caps_word       &kp CARET     &kp MINUS       &kp PLUS    &kp TILDE      &trans    &trans    &trans  &trans     &kp BACKSLASH  &trans
-                                       &trans          &trans      &trans         &trans    &trans    &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH        &kp DOLLAR  &kp PERCENT    &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &kp C_PLAY_PAUSE  &trans
+&trans  &kp AMPERSAND    &kp ASTERISK  &kp UNDERSCORE  &kp EQUAL   &kp GRAVE      &kp LEFT        &kp DOWN           &kp UP           &kp RIGHT   &kp PIPE          &trans
+&trans  &caps_word       &kp CARET     &kp MINUS       &kp PLUS    &kp TILDE      &kp HOME        &kp PAGE_DOWN      &kp PAGE_UP      &kp END     &kp BACKSLASH     &trans
+                                       &trans          &trans      &trans         &trans          &trans             &trans
             >;
         };
 
