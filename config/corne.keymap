@@ -7,24 +7,12 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <100>;
+};
+
 / {
     behaviors {
-        underscore_minus: underscore_minus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "UNDERSCORE_MINUS";
-            #binding-cells = <0>;
-            bindings =
-                <&kp UNDERSCORE>,
-                <&kp MINUS>;
-        };
-        equals_plus: equals_plus {
-            compatible = "zmk,behavior-tap-dance";
-            label = "EQUALS_PLUS";
-            #binding-cells = <0>;
-            bindings =
-                <&kp EQUAL>,
-                <&kp PLUS>;
-        };
     };
 
     keymap {
