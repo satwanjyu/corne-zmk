@@ -56,29 +56,15 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH        &kp DOLLAR  &kp PERCENT    &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &kp C_PLAY_PAUSE  &trans
-&trans  &kp AMPERSAND    &kp ASTERISK  &kp UNDERSCORE  &kp EQUAL   &kp GRAVE      &kp LEFT        &kp DOWN           &kp UP           &kp RIGHT   &kp PIPE          &trans
-&trans  &caps_word       &kp CARET     &kp MINUS       &kp PLUS    &kp TILDE      &kp HOME        &kp PAGE_DOWN      &kp PAGE_UP      &kp END     &kp BACKSLASH     &trans
-                                       &trans          &trans      &trans         &trans          &trans             &trans
-            >;
-        };
-
-        brackets_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &kp LEFT_BRACKET      &trans    &trans  &kp RIGHT_BRACKET      &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &trans    &trans  &kp RIGHT_PARENTHESIS  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LEFT_BRACE        &trans    &trans  &kp RIGHT_BRACE        &trans  &trans  &trans  &trans
-                        &trans  &trans                &trans    &trans  &trans                 &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp HASH          &kp DOLLAR            &kp PERCENT              &kp UP    &kp RIGHT  &trans  &trans  &trans  &trans
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans    &trans     &trans  &trans  &trans  &trans
+&trans  &kp MINUS        &kp EQUAL      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH            &kp DOWN  &kp LEFT   &trans  &trans  &trans  &trans
+                                        &trans            &trans                &trans                   &trans    &trans     &trans
             >;
         };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-
-        brackets {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
     };
 };
